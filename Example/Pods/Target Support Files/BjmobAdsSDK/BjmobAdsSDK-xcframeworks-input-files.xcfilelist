@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/BjmobAdsSDK/BjmobAdsSDK-xcframeworks.sh
-${PODS_ROOT}/../../Frameworks/MFAdsAdapter_CSJ.xcframework
-${PODS_ROOT}/../../Frameworks/MFAdsAdapter_GDT.xcframework
-${PODS_ROOT}/../../Frameworks/MFAdsAdapter_GG.xcframework
-${PODS_ROOT}/../../Frameworks/MFAdsAdspot.xcframework
-${PODS_ROOT}/../../Frameworks/MFAdsCore.xcframework
