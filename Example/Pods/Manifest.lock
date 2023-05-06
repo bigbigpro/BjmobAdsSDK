@@ -1,0 +1,26 @@
+PODS:
+  - BjmobAdsSDK (0.0.1):
+    - BjmobAdsSDK/MFAdsAdapter_CSJ (= 0.0.1)
+    - BjmobAdsSDK/MFAdsAdapter_GDT (= 0.0.1)
+    - BjmobAdsSDK/MFAdsAdapter_GG (= 0.0.1)
+    - BjmobAdsSDK/MFAdsAdspot (= 0.0.1)
+    - BjmobAdsSDK/MFAdsCore (= 0.0.1)
+  - BjmobAdsSDK/MFAdsAdapter_CSJ (0.0.1)
+  - BjmobAdsSDK/MFAdsAdapter_GDT (0.0.1)
+  - BjmobAdsSDK/MFAdsAdapter_GG (0.0.1)
+  - BjmobAdsSDK/MFAdsAdspot (0.0.1)
+  - BjmobAdsSDK/MFAdsCore (0.0.1)
+
+DEPENDENCIES:
+  - BjmobAdsSDK (from `../`)
+
+EXTERNAL SOURCES:
+  BjmobAdsSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BjmobAdsSDK: 640fadd0f63f946c2dadfbe5a5765cb844379555
+
+PODFILE CHECKSUM: 4a652a032d02d601e7f3d8baf7d5c86fc953eb64
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+framework module MFAdsAdapter_GG {
+  umbrella header "MFAdsAdapter_GG.h"
+
+  export *
+  module * { export * }
+}

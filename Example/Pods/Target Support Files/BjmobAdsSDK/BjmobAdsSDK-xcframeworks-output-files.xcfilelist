@@ -1,0 +1,5 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BjmobAdsSDK/MFAdsAdapter_CSJ/MFAdsAdapter_CSJ.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BjmobAdsSDK/MFAdsAdapter_GDT/MFAdsAdapter_GDT.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BjmobAdsSDK/MFAdsAdapter_GG/MFAdsAdapter_GG.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BjmobAdsSDK/MFAdsAdspot/MFAdsAdspot.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BjmobAdsSDK/MFAdsCore/MFAdsCore.framework
