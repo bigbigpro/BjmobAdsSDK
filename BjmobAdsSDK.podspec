@@ -18,6 +18,8 @@ Pod::Spec.new do |spec|
   spec.name         = "BjmobAdsSDK"
   spec.version      = "0.0.3"
   spec.summary      = "BjmobAdsSDK for iOS"
+  spec.ios.deployment_target = '11.0'
+  spec.platform     = :ios, "11.0"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
