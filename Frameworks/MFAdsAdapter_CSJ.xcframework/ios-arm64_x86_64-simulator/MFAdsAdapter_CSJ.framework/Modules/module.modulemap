@@ -1,6 +1,0 @@
-framework module MFAdsAdapter_CSJ {
-  umbrella header "MFAdsAdapter_CSJ.h"
-
-  export *
-  module * { export * }
-}
