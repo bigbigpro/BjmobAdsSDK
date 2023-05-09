@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "BjmobAdsSDK for iOS"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
@@ -110,23 +110,23 @@ Pod::Spec.new do |spec|
 #        ]
 
         
-  spec.subspec 'MFAdsAdapter_CSJ' do |csj|
-    csj.vendored_frameworks = 'Frameworks/MFAdsAdapter_CSJ.xcframework'
-    csj.dependency 'Ads-CN'
-    csj.ios.deployment_target = '11.0'
-  end
+  # spec.subspec 'MFAdsAdapter_CSJ' do |csj|
+  #   csj.vendored_frameworks = 'Frameworks/MFAdsAdapter_CSJ.xcframework'
+  #   csj.dependency 'Ads-CN'
+  #   csj.ios.deployment_target = '11.0'
+  # end
   
-  spec.subspec 'MFAdsAdapter_GDT' do |gdt|
-    gdt.vendored_frameworks = 'Frameworks/MFAdsAdapter_GDT.xcframework'
-  end
+  # spec.subspec 'MFAdsAdapter_GDT' do |gdt|
+  #   gdt.vendored_frameworks = 'Frameworks/MFAdsAdapter_GDT.xcframework'
+  # end
   
-  spec.subspec 'MFAdsAdapter_GG' do |gg|
-    gg.vendored_frameworks = 'Frameworks/MFAdsAdapter_GG.xcframework'
-  end
+  # spec.subspec 'MFAdsAdapter_GG' do |gg|
+  #   gg.vendored_frameworks = 'Frameworks/MFAdsAdapter_GG.xcframework'
+  # end
   
-  spec.subspec 'MFAdsAdspot' do |adspot|
-    adspot.vendored_frameworks = 'Frameworks/MFAdsAdspot.xcframework'
-  end
+  # spec.subspec 'MFAdsAdspot' do |adspot|
+  #   adspot.vendored_frameworks = 'Frameworks/MFAdsAdspot.xcframework'
+  # end
   
   spec.subspec 'MFAdsCore' do |core|
     core.vendored_frameworks = 'Frameworks/MFAdsCore.xcframework'
