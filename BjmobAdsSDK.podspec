@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.15"
+  spec.version      = "0.0.16"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -40,13 +40,11 @@ Pod::Spec.new do |spec|
   
 
   spec.subspec 'Core' do |core|
-    core.source_files = 'BjmobAdsSDK/Core/**/*.{h,m}'
     core.frameworks = 'UIKit', 'Foundation', 'AdSupport'
   end
 
   spec.subspec 'Adspot' do |adspot|
     adspot.dependency 'BjmobAdsSDK/Core'
-    adspot.source_files = 'BjmobAdsSDK/Adspot/**/*.{h,m}'
   end
 
 
@@ -60,7 +58,6 @@ Pod::Spec.new do |spec|
       csj.dependency 'BjmobAdsSDK/Core'
       csj.dependency 'BjmobAdsSDK/Adspot'
       csj.dependency 'Ads-CN'
-      csj.source_files = 'BjmobAdsSDK/Adapter/CSJ/**/*.{h,m}'
       csj.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
       csj.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
       #    valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
