@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.10"
+  spec.version      = "0.0.11"
   spec.summary      = "BjmobAdsSDK for iOS"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
@@ -128,9 +128,9 @@ Pod::Spec.new do |spec|
     adspot.vendored_frameworks = 'Frameworks/MFAdsAdspot.xcframework'
   end
   
-  spec.subspec 'MFAdsCore' do |core|
-    core.vendored_frameworks = 'Frameworks/MFAdsCore.xcframework'
-  end
+  # spec.subspec 'MFAdsCore' do |core|
+  #   core.vendored_frameworks = 'Frameworks/MFAdsCore.xcframework'
+  # end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
