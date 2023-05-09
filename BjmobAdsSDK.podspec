@@ -124,9 +124,9 @@ Pod::Spec.new do |spec|
   #   gg.vendored_frameworks = 'Frameworks/MFAdsAdapter_GG.xcframework'
   # end
   
-  # spec.subspec 'MFAdsAdspot' do |adspot|
-  #   adspot.vendored_frameworks = 'Frameworks/MFAdsAdspot.xcframework'
-  # end
+  spec.subspec 'MFAdsAdspot' do |adspot|
+    adspot.vendored_frameworks = 'Frameworks/MFAdsAdspot.xcframework'
+  end
   
   spec.subspec 'MFAdsCore' do |core|
     core.vendored_frameworks = 'Frameworks/MFAdsCore.xcframework'
