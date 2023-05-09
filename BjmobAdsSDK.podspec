@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.17"
+  spec.version      = "0.0.18"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -57,10 +57,10 @@ Pod::Spec.new do |spec|
   ]
 
   spec.subspec 'CSJ' do |csj|
-      csj.dependency 'BjmobAdsSDK/Core'
-      csj.dependency 'BjmobAdsSDK/Adspot'
+      csj.dependency 'BjmobAdsSDK/Frameworks/Core'
+      csj.dependency 'BjmobAdsSDK/Frameworks/Adspot'
       csj.dependency 'Ads-CN'
-      csj.source_files = 'BjmobAdsSDK/Adapter/CSJ/**/*.{h,m}'
+      csj.source_files = 'BjmobAdsSDK/Frameworks/Adapter/CSJ/**/*.{h,m}'
       csj.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
       csj.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
       #    valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
