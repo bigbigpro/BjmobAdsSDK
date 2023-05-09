@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.13"
+  spec.version      = "0.0.14"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -56,7 +56,7 @@ Pod::Spec.new do |spec|
     'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter.xcframework'
   ]
 
-  s.subspec 'CSJ' do |csj|
+  spec.subspec 'CSJ' do |csj|
       csj.dependency 'BjmobAdsSDK/Core'
       csj.dependency 'BjmobAdsSDK/Adspot'
       csj.dependency 'Ads-CN'
