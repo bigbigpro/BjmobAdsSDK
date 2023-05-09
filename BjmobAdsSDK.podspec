@@ -101,13 +101,13 @@ Pod::Spec.new do |spec|
 
   # spec.public_header_files = "Classes/**/*.h"
   
-#  spec.vendored_frameworks = [
-#        'BjmobAdsSDK/Frameworks/MFAdsAdapter_CSJ.xcframework',
-#        'BjmobAdsSDK/Frameworks/MFAdsAdapter_GDT.xcframework',
-#        'BjmobAdsSDK/Frameworks/MFAdsAdapter_GG.xcframework',
-#        'BjmobAdsSDK/Frameworks/MFAdsAdspot.xcframework',
-#        'BjmobAdsSDK/Frameworks/MFAdsCore.xcframework',
-#        ]
+ spec.vendored_frameworks = [
+      #  'BjmobAdsSDK/Frameworks/MFAdsAdapter_CSJ.xcframework',
+      #  'BjmobAdsSDK/Frameworks/MFAdsAdapter_GDT.xcframework',
+      #  'BjmobAdsSDK/Frameworks/MFAdsAdapter_GG.xcframework',
+       'BjmobAdsSDK/Frameworks/MFAdsAdspot.xcframework',
+       'BjmobAdsSDK/Frameworks/MFAdsCore.xcframework',
+       ]
 
         
   # spec.subspec 'MFAdsAdapter_CSJ' do |csj|
@@ -124,8 +124,15 @@ Pod::Spec.new do |spec|
   #   gg.vendored_frameworks = 'Frameworks/MFAdsAdapter_GG.xcframework'
   # end
   
+
+  spec.subspec 'MFAdsCore' do |core|
+    core.source_files = 'MFAdsSDK/Core/**/*.{h,m}'
+    core.frameworks = 'UIKit', 'Foundation', 'AdSupport'
+  end
+
   spec.subspec 'MFAdsAdspot' do |adspot|
-    adspot.vendored_frameworks = 'Frameworks/MFAdsAdspot.xcframework'
+      adspot.dependency 'MFAdsSDK/Core'
+      adspot.source_files = 'MFAdsSDK/Adspot/**/*.{h,m}'
   end
   
   # spec.subspec 'MFAdsCore' do |core|
