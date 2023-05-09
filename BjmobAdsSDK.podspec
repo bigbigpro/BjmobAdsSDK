@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.22"
+  spec.version      = "0.0.23"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -33,38 +33,52 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO'}
   spec.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO'}
   
-  spec.default_subspec = 'Core'
+#  spec.default_subspec = 'Core'
   
   spec.requires_arc = true
-  spec.static_framework = true  #是否为静态库
+#  spec.static_framework = true  #是否为静态库
   
 
-  spec.subspec 'Core' do |core|
-    core.source_files = 'BjmobAdsSDK/**/*.{h,m}'
-    core.frameworks = 'UIKit', 'Foundation', 'AdSupport'
-  end
-
-  spec.subspec 'Adspot' do |adspot|
-    adspot.dependency 'BjmobAdsSDK/Core'
-    adspot.source_files = 'BjmobAdsSDK/**/*.{h,m}'
-  end
+#  spec.subspec 'Core' do |core|
+#    core.source_files = 'BjmobAdsSDK/**/*.{h,m}'
+#    core.frameworks = 'UIKit', 'Foundation', 'AdSupport'
+#  end
+#
+#  spec.subspec 'Adspot' do |adspot|
+#    adspot.dependency 'BjmobAdsSDK/Core'
+#    adspot.source_files = 'BjmobAdsSDK/**/*.{h,m}'
+#  end
 
 
   spec.vendored_frameworks = [
-    'BjmobAdsSDK/Adspot/MFAdsAdspot.xcframework',
-    'BjmobAdsSDK/core/MFAdsCore.xcframework',
-    'BjmobAdsSDK/Adapter/MFAdsAdapter_CSJ.xcframework'
+    'BjmobAdsSDK/Frameworks/Adspot/MFAdsAdspot.xcframework',
+    'BjmobAdsSDK/Frameworks/core/MFAdsCore.xcframework',
+    'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter_CSJ.xcframework',
+    'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter_GDT.xcframework',
+    'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter_GG.xcframework'
   ]
+  
+  spec.dependency 'Ads-CN'
+  spec.dependency 'BaiduMobAdSDK'
+  spec.dependency 'GDTMobSDK'
+  spec.dependency 'Google-Mobile-Ads-SDK'
+  
+  spec.frameworks = 'CoreLocation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'QuartzCore', 'WebKit', 'MessageUI','SafariServices','AVFoundation','EventKit','QuartzCore','CoreMedia','StoreKit'
+  spec.libraries     = 'c++'
+  spec.weak_frameworks = "WebKit"
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
 
-  spec.subspec 'CSJ' do |csj|
-      csj.dependency 'BjmobAdsSDK/Core'
-      csj.dependency 'BjmobAdsSDK/Adspot'
-      csj.dependency 'Ads-CN'
-      csj.source_files = 'BjmobAdsSDK/Adapter/CSJ/**/*.{h,m}'
-      csj.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
-      csj.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
-      #    valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
-  end
+#  spec.subspec 'CSJ' do |csj|
+#      csj.dependency 'BjmobAdsSDK/Core'
+#      csj.dependency 'BjmobAdsSDK/Adspot'
+#      csj.dependency 'Ads-CN'
+#      csj.source_files = 'BjmobAdsSDK/**/*.{h,m}'
+#      csj.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
+#      csj.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
+#      #    valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
+#  end
+
+  
 
   spec.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
