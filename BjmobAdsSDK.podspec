@@ -27,6 +27,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/JiangYelinGit/BjmobAdsSDK.git", :tag => "#{spec.version}" }
   
   spec.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
+  spec.info_plist = {'GADApplicationIdentifier' => 'ca-app-pub-3940256099942544~1458002511'}
 
   valid_archs = ['i386', 'armv7', 'x86_64', 'arm64']
 

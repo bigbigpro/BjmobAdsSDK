@@ -1,0 +1,146 @@
+PODS:
+  - Ads-CN (5.2.0.5):
+    - Ads-CN/BUAdSDK (= 5.2.0.5)
+  - Ads-CN/BUAdSDK (5.2.0.5):
+    - Ads-CN/Dep_Accurate
+  - Ads-CN/Dep_Accurate (5.2.0.5):
+    - BUAdSDK (= 0.3.0.1)
+    - BURelyFoundation/CSJ (= 0.1.0.23)
+  - BaiduMobAdSDK (5.121)
+  - BjmobAdsSDK (0.0.23):
+    - Ads-CN
+    - BaiduMobAdSDK
+    - GDTMobSDK
+    - Google-Mobile-Ads-SDK
+  - BUAdSDK (0.3.0.1):
+    - BUAdSDK/BUAdSDK (= 0.3.0.1)
+  - BUAdSDK/BUAdSDK (0.3.0.1)
+  - BURelyFoundation/AFNetworking (0.1.0.23)
+  - BURelyFoundation/BURelyFoundation (0.1.0.23)
+  - BURelyFoundation/CSJ (0.1.0.23):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/CSJLottie
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/HM
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/Ugen
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/CSJLottie (0.1.0.23)
+  - BURelyFoundation/ELCoreTokenizer (0.1.0.23)
+  - BURelyFoundation/Foundation (0.1.0.23):
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/Gecko (0.1.0.23):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/HM (0.1.0.23)
+  - BURelyFoundation/NETWork (0.1.0.23):
+    - BURelyFoundation/AFNetworking
+  - BURelyFoundation/SDWebImage (0.1.0.23):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/ServiceCenter
+  - BURelyFoundation/ServiceCenter (0.1.0.23)
+  - BURelyFoundation/Ugen (0.1.0.23):
+    - BURelyFoundation/ELCoreTokenizer
+  - BURelyFoundation/YYModel (0.1.0.23)
+  - BURelyFoundation/ZFPlayer (0.1.0.23):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Zip (0.1.0.23):
+    - BURelyFoundation/Foundation
+  - GDTMobSDK (4.14.22):
+    - GDTMobSDK/GDTMobSDK (= 4.14.22)
+  - GDTMobSDK/GDTMobSDK (4.14.22)
+  - Google-Mobile-Ads-SDK (10.4.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (10.9.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.9.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.9.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUserMessagingPlatform (2.0.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.1):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.11.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.11.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.1)"
+  - GoogleUtilities/Reachability (7.11.1):
+    - GoogleUtilities/Logger
+  - Masonry (1.1.0)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.2.0)
+
+DEPENDENCIES:
+  - BjmobAdsSDK (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - Ads-CN
+    - BaiduMobAdSDK
+    - BUAdSDK
+    - BURelyFoundation
+    - GDTMobSDK
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - Masonry
+    - nanopb
+    - PromisesObjC
+
+EXTERNAL SOURCES:
+  BjmobAdsSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ads-CN: a388d242b39bf0e999a1d47c5507e5e9c7469fb7
+  BaiduMobAdSDK: 1b141ba711d0c1c8f5d797e56e44fa50a48b0b09
+  BjmobAdsSDK: 388f5abca02eeea9a2c9f3f9decb4840797a1c5a
+  BUAdSDK: 7569eec1e2c9ba61b948545eb5fcbb56775bf0de
+  BURelyFoundation: 1cf26b9f5a0411bbaf50042bc10c733ec87f9f6b
+  GDTMobSDK: f154476f3f8fbdc70fbb1da858eca5d77037f75e
+  Google-Mobile-Ads-SDK: 32fe7836431a06a29f7734ae092b600137c8108d
+  GoogleAppMeasurement: 373bcbead1bb6a85be7a64d5d8f96284b762ea9c
+  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
+  GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+
+PODFILE CHECKSUM: bb436bd5fabb9489fa55afbfe363ae86bb0b03dc
+
+COCOAPODS: 1.12.1

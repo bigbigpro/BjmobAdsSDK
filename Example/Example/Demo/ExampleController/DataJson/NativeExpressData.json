@@ -1,0 +1,18 @@
+{
+    "rules":[
+        {
+            "tag": "A",
+            "sort": [2],
+            "percent": 30
+        }
+    ],
+    "suppliers": [
+    
+        {
+            "tag": "gg",
+            "adspotId": "ca-app-pub-3940256099942544/3986624511",
+            "appId": "ca-app-pub-3940256099942544~1458002511",
+            "index": 2
+        }
+    ],
+}
