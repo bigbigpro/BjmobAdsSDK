@@ -263,11 +263,10 @@
 
 * [横幅广告：BjmobAdBanner](https://github.com/JiangYelinGit/BjmobAdsSDK/wiki/banner_ad)
 
-* [原生模板、信息流广告：BjmobAdNativeExpress](https://github.com/bayescom/EasyAds-iOS/wiki/3.4-%E5%8E%9F%E7%94%9F%E6%A8%A1%E6%9D%BF%E3%80%81%E4%BF%A1%E6%81%AF%E6%B5%81%E5%B9%BF%E5%91%8A)
+* [原生模板、信息流广告：BjmobAdNativeExpress](https://github.com/JiangYelinGit/BjmobAdsSDK/wiki/native_express_ad)
 
 * [激励视频广告：BjmobAdRewardVideo](https://github.com/JiangYelinGit/BjmobAdsSDK/wiki/reward_video_ad)
 
-* [全屏视频广告：BjmobAdFullScreenVideo](https://github.com/bayescom/EasyAds-iOS/wiki/3.6-%E5%85%A8%E5%B1%8F%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A)
 
 
 
