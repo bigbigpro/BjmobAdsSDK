@@ -259,7 +259,7 @@
 
 * [开屏广告：EasyAdSplash](https://github.com/JiangYelinGit/BjmobAdsSDK/wiki/splash_ad)
 
-* [插屏广告：EasyAdInterstitial](https://github.com/bayescom/EasyAds-iOS/wiki/3.2-%E6%8F%92%E5%B1%8F%28%E5%BC%B9%E7%AA%97%29%E5%B9%BF%E5%91%8A)
+* [插屏广告：EasyAdInterstitial](https://github.com/JiangYelinGit/BjmobAdsSDK/wiki/Interstitial_ad)
 
 * [横幅广告：EasyAdBanner](https://github.com/bayescom/EasyAds-iOS/wiki/3.3-%E6%A8%AA%E5%B9%85%E5%B9%BF%E5%91%8A)
 
