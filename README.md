@@ -224,6 +224,11 @@
 ## 1.4 编辑 Appdelegate.m
 
 ```
+  #import <MFAdsCore/MFAdSdkConfig.h>
+  #import <AppTrackingTransparency/AppTrackingTransparency.h>
+  #import <AdSupport/AdSupport.h>
+
+
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
       [self settingMFAds];
       return YES;
