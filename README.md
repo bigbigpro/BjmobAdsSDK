@@ -14,6 +14,9 @@
 
 ```
   pod 'BjmobAdsSDK'
+  
+  
+  执行 pod install
 ```
 
 ### 1.3 编辑info.plist
