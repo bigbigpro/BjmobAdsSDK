@@ -224,6 +224,18 @@
   <string>请求idfa权限</string>
 ```
 
+#### 1.3.5 添加初始化数据文件
+
+将开发者提供的下面5个文件添加到项目中
+
+```
+mfads_info_adsTypeNative.txt
+mfads_info_adsTypeBanner.txt
+mfads_info_adsTypeSplash.txt
+mfads_info_adsTypeRewardVideo.txt
+mfads_info_adsTypeInterstitial.txt
+```
+
 ## 1.4 编辑 Appdelegate.m
 
 ```
