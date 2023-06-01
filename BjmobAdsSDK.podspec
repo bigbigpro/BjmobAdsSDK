@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.23"
+  spec.version      = "0.0.24"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -49,6 +49,7 @@ Pod::Spec.new do |spec|
 #    adspot.dependency 'BjmobAdsSDK/Core'
 #    adspot.source_files = 'BjmobAdsSDK/**/*.{h,m}'
 #  end
+  spec.resource = 'BjmobAdsSDK/Resources/GGResource.bundle'
 
 
   spec.vendored_frameworks = [

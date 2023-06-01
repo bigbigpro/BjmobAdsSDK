@@ -18,23 +18,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     [self settingMFAds];
-    
-    
     return YES;
 }
 
-/// 配置sdk
 - (void)settingMFAds {
     [MFAdSdkConfig shareInstance].level = MFAdLogLevel_Debug;
     MFConfigModel * model = [[MFConfigModel alloc]init];
-//#ifdef DEBUG
-//    model.debugMode = YES;
-//#else
     model.debugMode = NO;
-//#endif
-    [[MFAdSdkConfig shareInstance]registerAppID:@"69lSe9cvORWnd62o" withConfig:model];
+    [[MFAdSdkConfig shareInstance] registerAppID:@"1375ce71c7894b24" withConfig:model];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -43,18 +35,15 @@
     });
 }
 
-// 获取IDFA权限
 - (void)requestTracking {
     if (@available(iOS 14, *)) {
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
-
             NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
                 NSLog(@"idfa = %@",idfa);
             }
         }];
     }
 }
-
 
 @end

@@ -79,6 +79,11 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 /// 获取SDK版本
 + (NSString *)sdkVersion;
 
+/*
+ 判断是否是简体中文
+ */
++ (BOOL)isSimplifiedChinese;
+
 /// 控制台log级别
 /// 0 不打印
 /// 1 打印fatal
