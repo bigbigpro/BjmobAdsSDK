@@ -3,7 +3,7 @@
 
 ## 1. 快速接入
 
-下面介绍EasyAds的快速接入方法，开发中也可以参考[Example](https://github.com/JiangYelinGit/BjmobAdsSDK/tree/main/Example)下的示例工程，快速了解。
+下面介绍BjmobAds的快速接入方法，开发中也可以参考[Example](https://github.com/JiangYelinGit/BjmobAdsSDK/tree/main/Example)下的示例工程，快速了解。
 
 ### 1.1 开发环境准备
 
