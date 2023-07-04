@@ -13,7 +13,7 @@
 ### 1.2 引入SDK
 
 ```
-  pod 'BjmobAdsSDK', '0.0.24'
+  pod 'BjmobAdsSDK', '0.0.25'
   
   
   执行 pod install
