@@ -26,7 +26,7 @@
     [MFAdSdkConfig shareInstance].level = MFAdLogLevel_Debug;
     MFConfigModel * model = [[MFConfigModel alloc]init];
     model.debugMode = NO;
-    [[MFAdSdkConfig shareInstance] registerAppID:@"1375ce71c7894b24" withConfig:model];
+    [[MFAdSdkConfig shareInstance] registerAppID:@"a06460e31fce62fa" withConfig:model];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
