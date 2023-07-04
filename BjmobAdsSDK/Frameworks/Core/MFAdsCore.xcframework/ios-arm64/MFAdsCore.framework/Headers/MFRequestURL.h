@@ -31,7 +31,7 @@
 #ifdef DEBUG
 
 #define BaseURL         @"https://api-cn.stillonline.cn"      // 国内API
-#define BaseURLOS       @"https://api-global.stillonline.cn"  // 海外API
+#define BaseURLOS       @"https://api-cn.stillonline.cn"  // 海外API
 #define BaseURLAlert    @"https://alert.stillonline.cn"       // 日志
 
 #else
@@ -39,7 +39,7 @@
 
 
 #define BaseURL         @"https://api-cn.stillonline.cn"      // 国内API
-#define BaseURLOS       @"https://api-global.stillonline.cn"  // 海外API
+#define BaseURLOS       @"https://api-cn.stillonline.cn"  // 海外API
 #define BaseURLAlert    @"https://alert.stillonline.cn"       // 日志
 
 #endif
