@@ -3,7 +3,7 @@
 
 ## 1. 快速接入
 
-下面介绍EasyAds的快速接入方法，开发中也可以参考[Example](https://github.com/JiangYelinGit/BjmobAdsSDK/tree/main/Example)下的示例工程，快速了解。
+下面介绍BjmobAds的快速接入方法，开发中也可以参考[Example](https://github.com/JiangYelinGit/BjmobAdsSDK/tree/main/Example)下的示例工程，快速了解。
 
 ### 1.1 开发环境准备
 
@@ -13,7 +13,7 @@
 ### 1.2 引入SDK
 
 ```
-  pod 'BjmobAdsSDK'
+  pod 'BjmobAdsSDK', '0.0.24'
   
   
   执行 pod install
@@ -222,6 +222,18 @@
 ```
   <key>NSUserTrackingUsageDescription</key>
   <string>请求idfa权限</string>
+```
+
+#### 1.3.5 添加初始化数据文件
+
+将开发者提供的下面5个文件添加到项目中
+
+```
+mfads_info_adsTypeNative.txt
+mfads_info_adsTypeBanner.txt
+mfads_info_adsTypeSplash.txt
+mfads_info_adsTypeRewardVideo.txt
+mfads_info_adsTypeInterstitial.txt
 ```
 
 ## 1.4 编辑 Appdelegate.m
