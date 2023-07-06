@@ -13,7 +13,7 @@
 ### 1.2 引入SDK
 
 ```
-  pod 'BjmobAdsSDK', '0.0.25'
+  pod 'BjmobAdsSDK', '0.0.26'
   
   
   执行 pod install
@@ -229,31 +229,31 @@
 将开发者提供的下面5个文件添加到项目中
 
 ```
-mfads_info_adsTypeNative.txt
-mfads_info_adsTypeBanner.txt
-mfads_info_adsTypeSplash.txt
-mfads_info_adsTypeRewardVideo.txt
-mfads_info_adsTypeInterstitial.txt
+bjads_info_adsTypeNative.txt
+bjads_info_adsTypeBanner.txt
+bjads_info_adsTypeSplash.txt
+bjads_info_adsTypeRewardVideo.txt
+bjads_info_adsTypeInterstitial.txt
 ```
 
 ## 1.4 编辑 Appdelegate.m
 
 ```
-  #import <MFAdsCore/MFAdSdkConfig.h>
+  #import <BJAdsCore/BJAdSdkConfig.h>
   #import <AppTrackingTransparency/AppTrackingTransparency.h>
   #import <AdSupport/AdSupport.h>
 
 
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-      [self settingMFAds];
+      [self settingBJAds];
       return YES;
   }
 
-  - (void)settingMFAds {
-      [MFAdSdkConfig shareInstance].level = MFAdLogLevel_Debug;
-      MFConfigModel * model = [[MFConfigModel alloc]init];
+  - (void)settingBJAds {
+      [BJAdSdkConfig shareInstance].level = BJAdLogLevel_Debug;
+      BJConfigModel * model = [[BJConfigModel alloc]init];
       model.debugMode = NO;
-      [[MFAdSdkConfig shareInstance] registerAppID:@"你的appId" withConfig:model];
+      [[BJAdSdkConfig shareInstance] registerAppID:@"你的appId" withConfig:model];
   }
 
   - (void)applicationDidBecomeActive:(UIApplication *)application {
