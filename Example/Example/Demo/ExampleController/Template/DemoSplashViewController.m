@@ -7,10 +7,10 @@
 //
 
 #import "DemoSplashViewController.h"
-#import <MFAdsAdspot/MFAdSplash.h>
+#import <BJAdsAdspot/BJAdSplash.h>
 
-@interface DemoSplashViewController () <MFAdSplashDelegate>
-@property(strong,nonatomic) MFAdSplash *adSplash;
+@interface DemoSplashViewController () <BJAdSplashDelegate>
+@property(strong,nonatomic) BJAdSplash *adSplash;
 @end
 
 @implementation DemoSplashViewController
@@ -63,7 +63,7 @@
     [self loadAdWithState:AdState_Normal];
 }
 
-#pragma mark - MFAdSplashDelegate
+#pragma mark - BJAdSplashDelegate
 
 /// 内部渠道开始加载时调用
 - (void)ad_supplierWillLoad:(NSString *)supplierId {
@@ -134,12 +134,12 @@
 }
 
 #pragma mark - lazy
-- (MFAdSplash *)adSplash{
+- (BJAdSplash *)adSplash{
     if(!_adSplash){
         if ([self isDebug]) {
-            _adSplash = [[MFAdSplash alloc]initWithJsonDic:self.dic viewController:self];
+            _adSplash = [[BJAdSplash alloc]initWithJsonDic:self.dic viewController:self];
         }else {
-            _adSplash = [[MFAdSplash alloc]initWithViewController:self];
+            _adSplash = [[BJAdSplash alloc]initWithViewController:self];
         }
         _adSplash.delegate = self;
         _adSplash.showLogoRequire = YES;

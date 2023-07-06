@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import <MFAdsCore/MFAdSdkConfig.h>
+#import <BJAdsCore/BJAdSdkConfig.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/AdSupport.h>
 
@@ -18,15 +18,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self settingMFAds];
+    [self settingBJAds];
     return YES;
 }
 
-- (void)settingMFAds {
-    [MFAdSdkConfig shareInstance].level = MFAdLogLevel_Debug;
-    MFConfigModel * model = [[MFConfigModel alloc]init];
+- (void)settingBJAds {
+    [BJAdSdkConfig shareInstance].level = BJAdLogLevel_Debug;
+    BJConfigModel * model = [[BJConfigModel alloc]init];
     model.debugMode = NO;
-    [[MFAdSdkConfig shareInstance] registerAppID:@"a06460e31fce62fa" withConfig:model];
+    [[BJAdSdkConfig shareInstance] registerAppID:@"a06460e31fce62fa" withConfig:model];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

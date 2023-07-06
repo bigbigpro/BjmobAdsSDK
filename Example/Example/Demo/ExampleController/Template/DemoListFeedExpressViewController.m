@@ -1,23 +1,23 @@
 //
 //  DemoListFeedExpressViewController.m
-//  MFAdsDebug
+//  BJAdsDebug
 //
 //  Created by cc on 2022/8/30.
 //
 
 #import "DemoListFeedExpressViewController.h"
-#import <MFAdsAdspot/MFAdNativeExpress.h>
-#import <MFAdsAdspot/MFAdNativeExpressView.h>
+#import <BJAdsAdspot/BJAdNativeExpress.h>
+#import <BJAdsAdspot/BJAdNativeExpressView.h>
 #import <Masonry/Masonry.h>
 
-@interface DemoListFeedExpressViewController ()<UITableViewDelegate, UITableViewDataSource, MFAdNativeExpressDelegate> {
+@interface DemoListFeedExpressViewController ()<UITableViewDelegate, UITableViewDataSource, BJAdNativeExpressDelegate> {
     BOOL _isLoadAndShow;
     BOOL _isShowLogView;
     CGFloat _navAndStateBarHeight;
 }
 
 //@property (strong, nonatomic) UITableView *tableView;
-@property (strong,nonatomic) MFAdNativeExpress *advanceFeed;
+@property (strong,nonatomic) BJAdNativeExpress *advanceFeed;
 @property (nonatomic, strong) NSMutableArray *dataArrM;
 @property (nonatomic, strong) NSMutableArray *arrViewsM;
 @property (nonatomic, assign) BOOL isLoadAndShow;
@@ -85,7 +85,7 @@
 // 信息流广告比较特殊, 渲染逻辑需要自行处理
 - (void)showNativeAd {
     for (NSInteger i = 0; i < self.arrViewsM.count; i++) {
-        MFAdNativeExpressView *view = self.arrViewsM[i];
+        BJAdNativeExpressView *view = self.arrViewsM[i];
         [view render];
         [_dataArrM addObject:self.arrViewsM[i]];
     }
@@ -113,7 +113,7 @@
     }];
 }
 
-#pragma mark - MFAdNativeExpressDelegate
+#pragma mark - BJAdNativeExpressDelegate
 
 /// 内部渠道开始加载时调用
 - (void)easyAdSupplierWillLoad:(NSString *)supplierId {
@@ -128,7 +128,7 @@
 }
 
 /// 广告数据拉取成功
-- (void)ad_NativeExpressOnAdLoadSuccess:(nullable NSArray<MFAdNativeExpressView *> *)views {
+- (void)ad_NativeExpressOnAdLoadSuccess:(nullable NSArray<BJAdNativeExpressView *> *)views {
     NSLog(@"广告拉取成功 %s", __func__);
     self.arrViewsM = [NSMutableArray arrayWithArray:views];
     
@@ -148,7 +148,7 @@
     [self deallocAd];
 }
 /// 广告渲染成功
-- (void)ad_NativeExpressOnAdRenderSuccess:(nullable MFAdNativeExpressView *)adView {
+- (void)ad_NativeExpressOnAdRenderSuccess:(nullable BJAdNativeExpressView *)adView {
     NSLog(@"广告渲染成功 %s %@", __func__, adView);
     [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(adView.expressView.frame.size.height);
@@ -156,7 +156,7 @@
     [self showProcessWithText:[NSString stringWithFormat:@"%s\r\n 广告渲染成功", __func__]];
 }
 /// 广告渲染失败
-- (void)ad_NativeExpressOnAdRenderFail:(nullable MFAdNativeExpressView *)adView withError:(NSError *_Nullable)error {
+- (void)ad_NativeExpressOnAdRenderFail:(nullable BJAdNativeExpressView *)adView withError:(NSError *_Nullable)error {
     NSLog(@"广告渲染失败 %s %@", __func__, adView);
     [self showProcessWithText:[NSString stringWithFormat:@"%s\r\n 广告渲染失败", __func__]];
     [_dataArrM removeObject: adView];
@@ -166,7 +166,7 @@
     NSLog(@"广告视图为空");
 }
 /// 广告曝光
-- (void)ad_NativeExpressOnAdShow:(nullable MFAdNativeExpressView *)adView {
+- (void)ad_NativeExpressOnAdShow:(nullable BJAdNativeExpressView *)adView {
     NSLog(@"广告曝光 %s", __func__);
     [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(adView.expressView.frame.size.height);
@@ -174,24 +174,24 @@
     [self showProcessWithText:[NSString stringWithFormat:@"%s\r\n 广告曝光成功", __func__]];
 }
 /// 广告点击
-- (void)ad_NativeExpressOnAdClicked:(nullable MFAdNativeExpressView *)adView {
+- (void)ad_NativeExpressOnAdClicked:(nullable BJAdNativeExpressView *)adView {
     NSLog(@"广告点击 %s", __func__);
     [self showProcessWithText:[NSString stringWithFormat:@"%s\r\n 广告点击", __func__]];
 }
 /// 广告被关闭 (注: 百度广告(百青藤), 不支持该回调, 若使用百青藤,则该回到功能请自行实现)
-- (void)ad_NativeExpressOnAdClosed:(nullable MFAdNativeExpressView *)adView {
+- (void)ad_NativeExpressOnAdClosed:(nullable BJAdNativeExpressView *)adView {
     NSLog(@"广告关闭 %s", __func__);
     [_dataArrM removeObject: adView];
 }
 
 #pragma mark - lazy
-- (MFAdNativeExpress *)advanceFeed{
+- (BJAdNativeExpress *)advanceFeed{
     if(!_advanceFeed){
         if ([self isDebug]) {
-            _advanceFeed = [[MFAdNativeExpress alloc] initWithJsonDic:self.dic viewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
+            _advanceFeed = [[BJAdNativeExpress alloc] initWithJsonDic:self.dic viewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
             _advanceFeed.delegate = self;
         }else {
-            _advanceFeed = [[MFAdNativeExpress alloc] initWithViewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
+            _advanceFeed = [[BJAdNativeExpress alloc] initWithViewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
             _advanceFeed.delegate = self;
         }
     }

@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.25"
+  spec.version      = "0.0.26"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -53,11 +53,11 @@ Pod::Spec.new do |spec|
 
 
   spec.vendored_frameworks = [
-    'BjmobAdsSDK/Frameworks/Adspot/MFAdsAdspot.xcframework',
-    'BjmobAdsSDK/Frameworks/core/MFAdsCore.xcframework',
-    'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter_CSJ.xcframework',
-    'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter_GDT.xcframework',
-    'BjmobAdsSDK/Frameworks/Adapter/MFAdsAdapter_GG.xcframework'
+    'BjmobAdsSDK/Frameworks/Adspot/BJAdsAdspot.xcframework',
+    'BjmobAdsSDK/Frameworks/core/BJAdsCore.xcframework',
+    'BjmobAdsSDK/Frameworks/Adapter/BJAdsAdapter_CSJ.xcframework',
+    'BjmobAdsSDK/Frameworks/Adapter/BJAdsAdapter_GDT.xcframework',
+    'BjmobAdsSDK/Frameworks/Adapter/BJAdsAdapter_GG.xcframework'
   ]
   
   spec.dependency 'Ads-CN'

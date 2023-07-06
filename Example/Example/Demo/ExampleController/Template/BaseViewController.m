@@ -161,7 +161,7 @@
 
 - (BOOL)isDebug {
     AppDelegate * d = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [[NSUserDefaults standardUserDefaults] setObject:@(d.isDebug) forKey:@"MF_ISDEBUG"];
+    [[NSUserDefaults standardUserDefaults] setObject:@(d.isDebug) forKey:@"BJ_ISDEBUG"];
     return d.isDebug;
 }
 

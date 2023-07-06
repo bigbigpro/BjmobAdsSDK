@@ -4,10 +4,10 @@
 //
 
 #import "DemoBannerViewController.h"
-#import <MFAdsAdspot/MFAdBanner.h>
+#import <BJAdsAdspot/BJAdBanner.h>
 
-@interface DemoBannerViewController () <MFAdBannerDelegate>
-@property (nonatomic, strong) MFAdBanner *adBanner;
+@interface DemoBannerViewController () <BJAdBannerDelegate>
+@property (nonatomic, strong) BJAdBanner *adBanner;
 @end
 
 @implementation DemoBannerViewController
@@ -34,7 +34,7 @@
     [self loadAdWithState:AdState_Normal];
 }
 
-#pragma mark - MFAdBannerDelegate
+#pragma mark - BJAdBannerDelegate
 
 /// 内部渠道开始加载时调用
 - (void)ad_supplierWillLoad:(NSString *)supplierId {
@@ -92,13 +92,13 @@
 }
 
 #pragma mark - lazy
-- (MFAdBanner *)adBanner{
+- (BJAdBanner *)adBanner{
     if(!_adBanner){
         
         if ([self isDebug]) {
-            _adBanner = [[MFAdBanner alloc]initWithJsonDic:self.dic viewController:self];
+            _adBanner = [[BJAdBanner alloc]initWithJsonDic:self.dic viewController:self];
         }else {
-            _adBanner = [[MFAdBanner alloc] initWithAdViewController:self];
+            _adBanner = [[BJAdBanner alloc] initWithAdViewController:self];
         }
 //        _adBanner.y = 300;
         _adBanner.delegate = self;

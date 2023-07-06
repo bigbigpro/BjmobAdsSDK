@@ -7,9 +7,9 @@
 //
 
 #import "DemoInterstitialViewController.h"
-#import <MFAdsAdspot/MFAdInterstitial.h>
-@interface DemoInterstitialViewController () <MFAdInterstitialDelegate>
-@property (nonatomic, strong) MFAdInterstitial *adInterstitial;
+#import <BJAdsAdspot/BJAdInterstitial.h>
+@interface DemoInterstitialViewController () <BJAdInterstitialDelegate>
+@property (nonatomic, strong) BJAdInterstitial *adInterstitial;
 @property (nonatomic) bool isAdLoaded;
 //@property (nonatomic, strong) NSDictionary *dic;
 
@@ -57,7 +57,7 @@
     [self loadAdWithState:AdState_Normal];
 }
 
-#pragma mark - MFAdInterstitialDelegate
+#pragma mark - BJAdInterstitialDelegate
 /// 请求广告数据成功后调用
 - (void)ad_loadSuccessWithAdsType:(adsType)adsType {
     NSLog(@"广告数据拉取成功 %s", __func__);
@@ -116,12 +116,12 @@
 
 
 #pragma mark - lazy
-- (MFAdInterstitial *)adInterstitial{
+- (BJAdInterstitial *)adInterstitial{
     if(!_adInterstitial){
         if ([self isDebug]) {
-            _adInterstitial = [[MFAdInterstitial alloc] initWithJsonDic:self.dic viewController:self];
+            _adInterstitial = [[BJAdInterstitial alloc] initWithJsonDic:self.dic viewController:self];
         }else {
-            _adInterstitial = [[MFAdInterstitial alloc] initWithViewController:self];
+            _adInterstitial = [[BJAdInterstitial alloc] initWithViewController:self];
         }
         _adInterstitial.delegate = self;
     }

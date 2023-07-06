@@ -1,6 +1,0 @@
-framework module MFAdsCore {
-  umbrella header "MFAdsCore.h"
-
-  export *
-  module * { export * }
-}

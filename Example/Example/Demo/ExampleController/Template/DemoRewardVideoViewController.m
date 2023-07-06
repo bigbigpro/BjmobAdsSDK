@@ -1,6 +1,6 @@
 //
 //  DemoRewardVideoViewController.m
-//  MFAdsSDKDemo
+//  BJAdsSDKDemo
 //
 //  Created by CherryKing on 2020/1/3.
 //  Copyright © 2020 BAYESCOM. All rights reserved.
@@ -8,9 +8,9 @@
 
 #import "DemoRewardVideoViewController.h"
 
-#import <MFAdsAdspot/MFAdRewardVideo.h>
-@interface DemoRewardVideoViewController () <MFAdRewardVideoDelegate>
-@property (nonatomic, strong) MFAdRewardVideo *adRewardVideo;
+#import <BJAdsAdspot/BJAdRewardVideo.h>
+@interface DemoRewardVideoViewController () <BJAdRewardVideoDelegate>
+@property (nonatomic, strong) BJAdRewardVideo *adRewardVideo;
 @property (nonatomic) bool isAdLoaded; // 激励视频广告播放器 采用的是边下边播的方式, 理论上拉取数据成功 即可展示, 但如果网速慢导致缓冲速度慢, 则激励视频广告会出现卡顿
                                        // 广点通推荐在 ad_rewardVideoOnAdVideoCached 视频缓冲完成后 在掉用showad
 @end
@@ -56,7 +56,7 @@
     [self loadAdWithState:AdState_Normal];
 }
 
-#pragma mark - MFAdRewardVideoDelegate
+#pragma mark - BJAdRewardVideoDelegate
 /// 广告数据加载成功
 - (void)ad_loadSuccessWithAdsType:(adsType)adsType {
     NSLog(@"广告数据拉取成功, 正在缓存... %s", __func__);
@@ -130,12 +130,12 @@
 }
 
 #pragma mark - lazy
-- (MFAdRewardVideo *)adRewardVideo{
+- (BJAdRewardVideo *)adRewardVideo{
     if(!_adRewardVideo){
         if ([self isDebug]) {
-            _adRewardVideo = [[MFAdRewardVideo alloc] initWithJsonDic:self.dic viewController:self];
+            _adRewardVideo = [[BJAdRewardVideo alloc] initWithJsonDic:self.dic viewController:self];
         }else {
-            _adRewardVideo = [[MFAdRewardVideo alloc] initWithViewController:self];
+            _adRewardVideo = [[BJAdRewardVideo alloc] initWithViewController:self];
         }
         _adRewardVideo.delegate = self;
     }

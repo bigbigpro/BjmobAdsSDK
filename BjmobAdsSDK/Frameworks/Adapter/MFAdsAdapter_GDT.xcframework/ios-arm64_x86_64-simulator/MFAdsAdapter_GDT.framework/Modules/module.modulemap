@@ -1,6 +1,0 @@
-framework module MFAdsAdapter_GDT {
-  umbrella header "MFAdsAdapter_GDT.h"
-
-  export *
-  module * { export * }
-}
