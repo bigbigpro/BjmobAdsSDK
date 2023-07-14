@@ -75,6 +75,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)completeRoutePathWithType:(adsType)type
                                  isShow:(BOOL)isShow;
 
+
+- (NSString *)getFilePath;
+
+- (NSString *)getFileNameWithType:(adsType)type isShow:(BOOL)isShow;
+
 @end
 
 NS_ASSUME_NONNULL_END

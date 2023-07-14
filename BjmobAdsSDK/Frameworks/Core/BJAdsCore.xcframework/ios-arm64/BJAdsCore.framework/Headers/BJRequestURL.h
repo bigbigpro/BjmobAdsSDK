@@ -33,14 +33,14 @@
 #define BaseURL         @"https://api-cn.stillonline.cn"      // 国内API
 #define BaseURLOS       @"https://api-cn.stillonline.cn"  // 海外API
 #define BaseURLAlert    @"https://alert.stillonline.cn"       // 日志
+#define BaseURLOSS      @"https://oss.stillonline.cn"       // 兜底域名
 
 #else
-
-
 
 #define BaseURL         @"https://api-cn.stillonline.cn"      // 国内API
 #define BaseURLOS       @"https://api-cn.stillonline.cn"  // 海外API
 #define BaseURLAlert    @"https://alert.stillonline.cn"       // 日志
+#define BaseURLOSS      @"https://oss.stillonline.cn"       // 兜底域名
 
 #endif
 

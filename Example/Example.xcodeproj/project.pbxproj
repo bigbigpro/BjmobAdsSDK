@@ -148,18 +148,18 @@
 		01706A292A0C937D00D7D7AF /* Template */ = {
 			isa = PBXGroup;
 			children = (
-				01706A2A2A0C937D00D7D7AF /* DemoSplashViewController.m */,
-				01706A2B2A0C937D00D7D7AF /* DemoInterstitialViewController.h */,
-				01706A2C2A0C937D00D7D7AF /* DemoListFeedExpressViewController.h */,
+				01706A352A0C937D00D7D7AF /* BaseViewController.h */,
 				01706A2D2A0C937D00D7D7AF /* BaseViewController.m */,
 				01706A2E2A0C937D00D7D7AF /* DemoBannerViewController.h */,
-				01706A2F2A0C937D00D7D7AF /* DemoRewardVideoViewController.m */,
-				01706A302A0C937D00D7D7AF /* DemoListFeedExpressViewController.m */,
-				01706A312A0C937D00D7D7AF /* DemoInterstitialViewController.m */,
-				01706A322A0C937D00D7D7AF /* DemoSplashViewController.h */,
-				01706A332A0C937D00D7D7AF /* DemoRewardVideoViewController.h */,
 				01706A342A0C937D00D7D7AF /* DemoBannerViewController.m */,
-				01706A352A0C937D00D7D7AF /* BaseViewController.h */,
+				01706A2B2A0C937D00D7D7AF /* DemoInterstitialViewController.h */,
+				01706A312A0C937D00D7D7AF /* DemoInterstitialViewController.m */,
+				01706A2C2A0C937D00D7D7AF /* DemoListFeedExpressViewController.h */,
+				01706A302A0C937D00D7D7AF /* DemoListFeedExpressViewController.m */,
+				01706A332A0C937D00D7D7AF /* DemoRewardVideoViewController.h */,
+				01706A2F2A0C937D00D7D7AF /* DemoRewardVideoViewController.m */,
+				01706A322A0C937D00D7D7AF /* DemoSplashViewController.h */,
+				01706A2A2A0C937D00D7D7AF /* DemoSplashViewController.m */,
 			);
 			path = Template;
 			sourceTree = "<group>";
