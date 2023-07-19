@@ -137,7 +137,7 @@
 - (BJAdSplash *)adSplash{
     if(!_adSplash){
         if ([self isDebug]) {
-            _adSplash = [[BJAdSplash alloc]initWithJsonDic:self.dic viewController:self];
+//            _adSplash = [[BJAdSplash alloc]initWithJsonDic:self.dic viewController:self];
         }else {
             _adSplash = [[BJAdSplash alloc]initWithViewController:self];
         }

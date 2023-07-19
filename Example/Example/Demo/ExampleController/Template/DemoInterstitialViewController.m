@@ -119,7 +119,7 @@
 - (BJAdInterstitial *)adInterstitial{
     if(!_adInterstitial){
         if ([self isDebug]) {
-            _adInterstitial = [[BJAdInterstitial alloc] initWithJsonDic:self.dic viewController:self];
+//            _adInterstitial = [[BJAdInterstitial alloc] initWithJsonDic:self.dic viewController:self];
         }else {
             _adInterstitial = [[BJAdInterstitial alloc] initWithViewController:self];
         }

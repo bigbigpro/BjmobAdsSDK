@@ -96,7 +96,7 @@
     if(!_adBanner){
         
         if ([self isDebug]) {
-            _adBanner = [[BJAdBanner alloc]initWithJsonDic:self.dic viewController:self];
+//            _adBanner = [[BJAdBanner alloc]initWithJsonDic:self.dic viewController:self];
         }else {
             _adBanner = [[BJAdBanner alloc] initWithAdViewController:self];
         }

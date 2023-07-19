@@ -188,8 +188,8 @@
 - (BJAdNativeExpress *)advanceFeed{
     if(!_advanceFeed){
         if ([self isDebug]) {
-            _advanceFeed = [[BJAdNativeExpress alloc] initWithJsonDic:self.dic viewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
-            _advanceFeed.delegate = self;
+//            _advanceFeed = [[BJAdNativeExpress alloc] initWithJsonDic:self.dic viewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
+//            _advanceFeed.delegate = self;
         }else {
             _advanceFeed = [[BJAdNativeExpress alloc] initWithViewController:self adSize:CGSizeMake(self.view.bounds.size.width, 0)];
             _advanceFeed.delegate = self;

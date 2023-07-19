@@ -133,7 +133,7 @@
 - (BJAdRewardVideo *)adRewardVideo{
     if(!_adRewardVideo){
         if ([self isDebug]) {
-            _adRewardVideo = [[BJAdRewardVideo alloc] initWithJsonDic:self.dic viewController:self];
+//            _adRewardVideo = [[BJAdRewardVideo alloc] initWithJsonDic:self.dic viewController:self];
         }else {
             _adRewardVideo = [[BJAdRewardVideo alloc] initWithViewController:self];
         }
