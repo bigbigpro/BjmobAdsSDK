@@ -5,7 +5,7 @@
 
 ### 在项目Podfile文件中加入
 
-```
+``` ruby
   pod 'BjmobAdsSDK', '0.0.28'
 ```
 
@@ -14,14 +14,14 @@
 
 ## 1.2 编辑info.plist
 
-```
+``` 
 <key>NSUserTrackingUsageDescription</key>
 <string>请求idfa权限</string>
 
 <key>NSAppTransportSecurity</key>
 <dict>
-  <key>NSAllowsArbitraryLoads</key>
-  <true/>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
 </dict>
 
 <key>GADApplicationIdentifier</key>
@@ -207,20 +207,22 @@
 
 ## 1.3 编辑 AppDelegate.swift
 
-```
+``` swift
 import UIKit
+
+// 1.添加引用
 import BJAdsCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+	// 2.调用初始化方法
         self.settingBJAds()
         return true
 
     }
-
+    // 2.初始化SDK
     func settingBJAds() {
 
         BJAdSdkConfig.shareInstance().level = .debug;
@@ -234,8 +236,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## 1.4 编辑 SceneDelegate.swift
 
-```
+``` swift
 import UIKit
+
+// 1.添加引用
 import AppTrackingTransparency
 import AdSupport
 
@@ -244,13 +248,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-
+	// 3.调用idfa授权方法
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
           self.requestTracking()
         }
 
     }
 
+    // 2.请求idfa授权
     func requestTracking() {
 
         if #available(iOS 14, *) {
@@ -269,19 +274,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ## 1.5 编辑ViewController.swift
 
-```
+``` swift
 
 import UIKit
+
+// 1.添加引用
 import BJAdsAdspot
 import AppTrackingTransparency
 import AdSupport
 
-class ViewController: UIViewController,BJAdBannerDelegate {
+class ViewController: UIViewController {
     @IBOutlet weak var idfaLabel: UILabel!
     @IBOutlet weak var appid: UILabel!
+
+    // 2.声明变量
     var adBanner: BJAdBanner? 
     var adSplash: BJAdSplash?
     var adInTerstitial: BJAdInterstitial?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
@@ -297,17 +307,19 @@ class ViewController: UIViewController,BJAdBannerDelegate {
     }
     
     @IBAction func loadBannerTapped(_ sender: Any) {
+	// 3.初始化Banner广告并展示
         adBanner = BJAdBanner.init(adViewController: self)
-        adBanner?.delegate = self
         adBanner?.loadAndShowAd()
     }
     
     @IBAction func loadSplashTapped(_ sender: Any) {
+        // 4.初始化Splash广告并展示
         adSplash = BJAdSplash.init(viewController: self)
         adSplash?.loadAndShowAd()
     }
     
     @IBAction func loadInterstitialTapped(_ sender: Any) {
+        // 5.初始化Interstitial广告并展示
         adInTerstitial = BJAdInterstitial.init(viewController: self)
         adInTerstitial?.loadAndShowAd()
     }
