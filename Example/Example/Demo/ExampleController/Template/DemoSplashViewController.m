@@ -142,11 +142,58 @@
             _adSplash = [[BJAdSplash alloc]initWithViewController:self];
         }
         _adSplash.delegate = self;
-        _adSplash.showLogoRequire = YES;
-        _adSplash.title = @"数字尾巴";
-        _adSplash.logoImage = [UIImage imageNamed:@"58"];
-        _adSplash.backgroundImage = [UIImage imageNamed:@"LaunchImage_img"];
         _adSplash.timeout = 5;
+        _adSplash.showLogoRequire = YES;
+        
+        // 1. logo垂直显示
+//        _adSplash.adLogoType = AdLogoTypeVertical;
+//        _adSplash.title = @"bjmob";
+//        _adSplash.logoImage = [UIImage imageNamed:@"bjmob_logo"];
+        
+        // 2. logo水平显示
+//        _adSplash.adLogoType = AdLogoTypeHorizontal;
+//        _adSplash.title = @"bjmob";
+//        _adSplash.subTitle = @"bjmob subTitle";
+//        _adSplash.logoImage = [UIImage imageNamed:@"bjmob_logo"];
+        
+        // 3. 自定义logo显示
+        // 获取ContentView大小
+        CGSize contentViewSize = [_adSplash getLogoConentViewSize];
+        // 底部view
+        UIView *bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, contentViewSize.width, contentViewSize.height)];
+
+        // logo
+        CGFloat logoWH = contentViewSize.height / 2;
+        UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(50,
+                                                                          (contentViewSize.height - logoWH) / 2,
+                                                                          logoWH,
+                                                                          logoWH)];
+        imgV.contentMode = UIViewContentModeScaleAspectFit;
+        imgV.image = [UIImage imageNamed:@"bjmob_logo"];
+        imgV.backgroundColor = [UIColor grayColor];
+        [bottomView addSubview:imgV];
+        
+        // title
+        UILabel * title = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(imgV.frame) + 10,
+                                                                   CGRectGetMinY(imgV.frame) + 3,
+                                                                   _adSplash.viewController.view.frame.size.width - 20,
+                                                                   20)];
+        title.font = [UIFont systemFontOfSize:15];
+        title.textAlignment = NSTextAlignmentLeft;
+        title.text = @"bjmob";
+        [bottomView addSubview:title];
+        // subtitle
+        UILabel * subTitle = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(imgV.frame) + 10,
+                                                                      CGRectGetMaxY(imgV.frame) - 3 - 20,
+                                                                      _adSplash.viewController.view.frame.size.width - 20,
+                                                                      20)];
+        subTitle.font = [UIFont systemFontOfSize:13];
+        subTitle.textAlignment = NSTextAlignmentLeft;
+        subTitle.text = @"bjmob subtitle";
+        [bottomView addSubview:subTitle];
+        
+        _adSplash.logoContentView = bottomView;
+        
     }
     return _adSplash;
 }

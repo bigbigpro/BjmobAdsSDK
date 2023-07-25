@@ -92,6 +92,8 @@
 //    UINavigationController * nv = [[UINavigationController alloc]initWithRootViewController:vc];
     vc.title = _dataArr[indexPath.row][@"title"];
     if (!vc) {
+        [[UIPasteboard generalPasteboard] setString: [self getIDFA]];
+        
         return;
     }
 //    [self presentViewController:vc animated:YES completion:nil];
