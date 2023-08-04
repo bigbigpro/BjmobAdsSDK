@@ -1,8 +1,18 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+workspace 'Example.xcworkspace'
+
+target 'ExampleSwift' do
+  use_frameworks!
+  project 'ExampleSwift/ExampleSwift.xcodeproj'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'BjmobAdsSDK', :path => '../'
+end
+
 target 'Example' do
   use_frameworks!
+  project 'Example/Example.xcodeproj'
   pod 'Masonry', '~> 1.1.0'
   pod 'BjmobAdsSDK', :path => '../'
 #  pod 'BjmobAdsSDK', '0.0.29'

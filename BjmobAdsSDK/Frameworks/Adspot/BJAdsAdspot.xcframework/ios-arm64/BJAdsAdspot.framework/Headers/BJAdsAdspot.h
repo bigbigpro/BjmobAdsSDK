@@ -8,6 +8,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#pragma mark - View
+#import <BJAdsAdspot/BJAdNativeExpressView.h>
+
 #pragma mark - 调用器
 #import <BJAdsAdspot/BJAdBanner.h>
 #import <BJAdsAdspot/BJAdInterstitial.h>
