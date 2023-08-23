@@ -7,11 +7,19 @@
 
 import UIKit
 import BJAdsCore
+import Bugly
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        var buglyConfig = BuglyConfig()
+        buglyConfig.debugMode = false
+        Bugly.start(withAppId: "cb8f7f8543", config: buglyConfig)
+        
+        
+      
+        
         self.settingBJAds()
         return true
     }

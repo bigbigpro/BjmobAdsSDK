@@ -6,16 +6,18 @@ workspace 'Example.xcworkspace'
 target 'ExampleSwift' do
   use_frameworks!
   project 'ExampleSwift/ExampleSwift.xcodeproj'
-  pod 'Masonry', '~> 1.1.0'
-  pod 'BjmobAdsSDK', :path => '../'
+#  pod 'Masonry', '~> 1.1.0'
+#  pod 'BjmobAdsSDK', :path => '../'
+  pod 'BjmobAdsSDK', '0.0.30'
+  pod 'Bugly'
 end
 
 target 'Example' do
   use_frameworks!
   project 'Example/Example.xcodeproj'
   pod 'Masonry', '~> 1.1.0'
-  pod 'BjmobAdsSDK', :path => '../'
-#  pod 'BjmobAdsSDK', '0.0.29'
+#  pod 'BjmobAdsSDK', :path => '../'
+#  pod 'BjmobAdsSDK', '0.0.30'
 end
 
 

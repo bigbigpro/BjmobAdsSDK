@@ -86,11 +86,11 @@ class ViewController: UIViewController,BJAdNativeExpressDelegate,BJAdBannerDeleg
         }
         firstView = (self.dataArrM?.firstObject as! BJAdNativeExpressView)
         self.view.addSubview(firstView!.expressView)
-        firstView!.expressView.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300)
+        firstView!.expressView.frame = CGRectMake(0, 450, self.view.bounds.size.width, 300)
     }
 
     func ad_NativeExpress(onAdRenderSuccess adView: BJAdNativeExpressView?) {
-        firstView!.expressView.frame = CGRectMake(0, 100, self.view.bounds.size.width, (adView?.expressView.frame.size.height)!)
+        firstView!.expressView.frame = CGRectMake(0, 450, self.view.bounds.size.width, (adView?.expressView.frame.size.height)!)
     }
     
     func ad_NativeExpress(onAdClosed adView: BJAdNativeExpressView?) {
