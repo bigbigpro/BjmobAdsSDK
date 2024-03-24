@@ -7,8 +7,8 @@ target 'ExampleSwift' do
   use_frameworks!
   project 'ExampleSwift/ExampleSwift.xcodeproj'
 #  pod 'Masonry', '~> 1.1.0'
-#  pod 'BjmobAdsSDK', :path => '../'
-  pod 'BjmobAdsSDK', '0.0.30'
+ pod 'BjmobAdsSDK', :path => '../'
+  # pod 'BjmobAdsSDK', '0.0.31'
   pod 'Bugly'
 end
 
@@ -17,7 +17,7 @@ target 'Example' do
   project 'Example/Example.xcodeproj'
   pod 'Masonry', '~> 1.1.0'
 #  pod 'BjmobAdsSDK', :path => '../'
-#  pod 'BjmobAdsSDK', '0.0.30'
+#  pod 'BjmobAdsSDK', '0.0.31'
 end
 
 

@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.30"
+  spec.version      = "0.0.31"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -60,10 +60,10 @@ Pod::Spec.new do |spec|
     'BjmobAdsSDK/Frameworks/Adapter/BJAdsAdapter_GG.xcframework'
   ]
   
-  spec.dependency 'Ads-CN'
-  spec.dependency 'BaiduMobAdSDK'
-  spec.dependency 'GDTMobSDK'
-  spec.dependency 'Google-Mobile-Ads-SDK'
+  spec.dependency 'Ads-CN', '5.4.1.1'
+  spec.dependency 'BaiduMobAdSDK', '5.311'
+  spec.dependency 'GDTMobSDK', '4.14.32'
+  spec.dependency 'Google-Mobile-Ads-SDK','10.9.0'
   
   spec.frameworks = 'CoreLocation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'QuartzCore', 'WebKit', 'MessageUI','SafariServices','AVFoundation','EventKit','QuartzCore','CoreMedia','StoreKit'
   spec.libraries     = 'c++'
