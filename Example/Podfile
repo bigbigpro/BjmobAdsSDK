@@ -8,7 +8,7 @@ target 'ExampleSwift' do
   project 'ExampleSwift/ExampleSwift.xcodeproj'
 #  pod 'Masonry', '~> 1.1.0'
  pod 'BjmobAdsSDK', :path => '../'
-  # pod 'BjmobAdsSDK', '0.0.31'
+#   pod 'BjmobAdsSDK', '0.0.35'
   pod 'Bugly'
 end
 
