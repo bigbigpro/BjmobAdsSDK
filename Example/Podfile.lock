@@ -1,83 +1,54 @@
 PODS:
-  - Ads-CN (5.4.1.1):
-    - Ads-CN/BUAdSDK (= 5.4.1.1)
-  - Ads-CN/BUAdSDK (5.4.1.1):
-    - BURelyFoundation/CSJ (= 0.3.0.4)
+  - Ads-CN (6.7.0.8):
+    - Ads-CN/BUAdLive-Framework (= 6.7.0.8)
+    - Ads-CN/BUAdSDK (= 6.7.0.8)
+  - Ads-CN/BUAdLive-Framework (6.7.0.8):
+    - BUTTSDKFramework/LivePull-Lite (= 1.45.1.8-premium)
+  - Ads-CN/BUAdSDK (6.7.0.8)
   - BaiduMobAdSDK (5.311)
-  - BjmobAdsSDK (0.0.31):
-    - Ads-CN (= 5.4.1.1)
+  - BjmobAdsSDK (0.0.32):
+    - Ads-CN (= 6.7.0.8)
     - BaiduMobAdSDK (= 5.311)
     - GDTMobSDK (= 4.14.32)
-    - Google-Mobile-Ads-SDK (= 10.9.0)
-  - Bugly (2.5.93)
-  - BURelyFoundation/AFNetworking (0.3.0.4)
-  - BURelyFoundation/BURelyFoundation (0.3.0.4)
-  - BURelyFoundation/CSJ (0.3.0.4):
-    - BURelyFoundation/BURelyFoundation
-    - BURelyFoundation/HM
-    - BURelyFoundation/NETWork
-  - BURelyFoundation/HM (0.3.0.4)
-  - BURelyFoundation/NETWork (0.3.0.4):
-    - BURelyFoundation/AFNetworking
+    - Google-Mobile-Ads-SDK (= 12.8.0)
+  - Bugly (2.6.1)
+  - BUTTSDKFramework/Core (1.45.1.8-premium)
+  - BUTTSDKFramework/LiveBase (1.45.1.8-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Base (1.45.1.8-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Lite (1.45.1.8-premium):
+    - BUTTSDKFramework/LivePlayer/Base
+    - BUTTSDKFramework/PlayerCore/LiveLite
+  - BUTTSDKFramework/LivePull-Lite (1.45.1.8-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Lite
+  - BUTTSDKFramework/PlayerCore/LiveLite (1.45.1.8-premium):
+    - BUTTSDKFramework/TTFFmpeg/LiveLite
+  - BUTTSDKFramework/Reachability (1.45.1.8-premium)
+  - BUTTSDKFramework/SSL (1.45.1.8-premium)
+  - BUTTSDKFramework/Strategy/Core (1.45.1.8-premium):
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/Strategy/Lite (1.45.1.8-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Core
+  - BUTTSDKFramework/Tools (1.45.1.8-premium):
+    - BUTTSDKFramework/SSL
+  - BUTTSDKFramework/TTFFmpeg/Base (1.45.1.8-premium):
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/TTFFmpeg/LiveLite (1.45.1.8-premium):
+    - BUTTSDKFramework/TTFFmpeg/Base
   - GDTMobSDK (4.14.32):
     - GDTMobSDK/GDTMobSDK (= 4.14.32)
   - GDTMobSDK/GDTMobSDK (4.14.32)
-  - Google-Mobile-Ads-SDK (10.9.0):
-    - GoogleAppMeasurement (< 11.0, >= 7.0)
+  - Google-Mobile-Ads-SDK (12.8.0):
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (10.23.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.23.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30911.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.23.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.23.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30911.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.23.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30911.0, >= 2.30908.0)
-  - GoogleUserMessagingPlatform (2.3.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.13.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-    - GoogleUtilities/Privacy
-  - GoogleUtilities/Environment (7.13.0):
-    - GoogleUtilities/Privacy
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.13.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Privacy
-  - GoogleUtilities/MethodSwizzler (7.13.0):
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Privacy
-  - GoogleUtilities/Network (7.13.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Privacy
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.13.0)":
-    - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (7.13.0)
-  - GoogleUtilities/Reachability (7.13.0):
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Privacy
+  - GoogleUserMessagingPlatform (3.0.0)
   - Masonry (1.1.0)
-  - nanopb (2.30910.0):
-    - nanopb/decode (= 2.30910.0)
-    - nanopb/encode (= 2.30910.0)
-  - nanopb/decode (2.30910.0)
-  - nanopb/encode (2.30910.0)
-  - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
   - BjmobAdsSDK (from `../`)
@@ -89,35 +60,27 @@ SPEC REPOS:
     - Ads-CN
     - BaiduMobAdSDK
     - Bugly
-    - BURelyFoundation
+    - BUTTSDKFramework
     - GDTMobSDK
     - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
-    - GoogleUtilities
     - Masonry
-    - nanopb
-    - PromisesObjC
 
 EXTERNAL SOURCES:
   BjmobAdsSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Ads-CN: 3508386d037d0b2c2d765c3ab9b4c98d1275ec50
+  Ads-CN: 4dcb5105a7105f76bcefb246e69daf6c39db2778
   BaiduMobAdSDK: dc88bb5e9cdfb070cbb228e4b1cc3ff8b5575b6a
-  BjmobAdsSDK: d56988f2c258c73e02b295f06716f8ce18646fe4
-  Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
-  BURelyFoundation: f6dc8547c858e7f97c1a0ec31a0c81b62f657892
+  BjmobAdsSDK: 87c51cf6008b6bee1ac389fd951f7721e3e04c9a
+  Bugly: 217ac2ce5f0f2626d43dbaa4f70764c953a26a31
+  BUTTSDKFramework: 914058900f46707f12a6e8c10e8da6ba4e891c3e
   GDTMobSDK: f67eaea373e379cc7151a76fa94de3ac5123426d
-  Google-Mobile-Ads-SDK: e81e8b009a182dc8dd14951782efdbb30a5e4510
-  GoogleAppMeasurement: 453eb0de99fcf2bdec9403e9ac5d7871fdba3e3f
-  GoogleUserMessagingPlatform: b1ad7bb1ee3ce64749d4fec24f667b36e45c396c
-  GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
+  Google-Mobile-Ads-SDK: ece122bc89b38cab319543bc464a9ceabfe1d307
+  GoogleUserMessagingPlatform: f8d0cdad3ca835406755d0a69aa634f00e76d576
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  nanopb: 438bc412db1928dac798aa6fd75726007be04262
-  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
 PODFILE CHECKSUM: 6f24073028880a174862c281cd99e450d3587224
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

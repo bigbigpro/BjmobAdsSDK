@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) BOOL debugMode;
 /// 是否为中国大陆地区
 @property(nonatomic, assign) BOOL isCN;
+/// 谷歌测试设备ID，仅限测试传入，线上不传
+@property(nonatomic, strong) NSArray *testDeviceIdentifiersGG;
 
 @end
 

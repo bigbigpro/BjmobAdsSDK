@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.31"
+  spec.version      = "0.0.32"
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
@@ -21,10 +21,10 @@ Pod::Spec.new do |spec|
   为开发者提供便利，快速集成。
   DESC
 
-  spec.homepage     = "https://github.com/JiangYelinGit/BjmobAdsSDK"
+  spec.homepage     = "https://github.com/bigbigpro/BjmobAdsSDK"
 
-  spec.author       = { "ext.jiangyelin1" => "ext.jiangyelin1@jd.com" }
-  spec.source       = { :git => "https://github.com/JiangYelinGit/BjmobAdsSDK.git", :tag => "#{spec.version}" }
+  spec.author       = { "bigbigpro" => "bigbigpro@163.com" }
+  spec.source       = { :git => "https://github.com/bigbigpro/BjmobAdsSDK.git", :tag => "#{spec.version}" }
   
   spec.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
   spec.info_plist = {'GADApplicationIdentifier' => 'ca-app-pub-3940256099942544~1458002511'}
@@ -60,10 +60,10 @@ Pod::Spec.new do |spec|
     'BjmobAdsSDK/Frameworks/Adapter/BJAdsAdapter_GG.xcframework'
   ]
   
-  spec.dependency 'Ads-CN', '5.4.1.1'
+  spec.dependency 'Ads-CN', '6.7.0.8'
   spec.dependency 'BaiduMobAdSDK', '5.311'
   spec.dependency 'GDTMobSDK', '4.14.32'
-  spec.dependency 'Google-Mobile-Ads-SDK','10.9.0'
+  spec.dependency 'Google-Mobile-Ads-SDK','12.8.0'
   
   spec.frameworks = 'CoreLocation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'QuartzCore', 'WebKit', 'MessageUI','SafariServices','AVFoundation','EventKit','QuartzCore','CoreMedia','StoreKit'
   spec.libraries     = 'c++'

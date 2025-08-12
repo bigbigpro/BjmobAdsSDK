@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BJAdSdkConfig.shareInstance().level = .debug;
         let model = BJConfigModel();
         model.debugMode = false;
+//        model.testDeviceIdentifiersGG = ["F38EA565-26DF-4AB7-900D-EBF1E5AF2154"];
         BJAdSdkConfig.shareInstance().registerAppID("a06460e31fce62fa", withConfig: model)
     }
 }
