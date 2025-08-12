@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BjmobAdsSDK"
-  spec.version      = "0.0.33"
+  spec.version      = "0.0.34"
   spec.ios.deployment_target = '12.0'
   spec.platform     = :ios, "12.0"
   spec.requires_arc = true
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/bigbigpro/BjmobAdsSDK"
 
   spec.author       = { "bigbigpro" => "bigbigpro@163.com" }
-  spec.source       = { :git => "https://github.com/bigbigpro/BjmobAdsSDK.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:bigbigpro/BjmobAdsSDK.git", :tag => "#{spec.version}" }
   
   spec.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
   spec.info_plist = {'GADApplicationIdentifier' => 'ca-app-pub-3940256099942544~1458002511'}
