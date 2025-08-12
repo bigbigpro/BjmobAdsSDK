@@ -8,15 +8,15 @@
 ### 1.1 开发环境准备
 
 - 开发工具：推荐使用Xcode 14及以上版本
-- 部署目标：iOS 11.0及以上版本
+- 部署目标：iOS 12.0及以上版本
 
 ### 1.2 引入SDK
 
 ```
-  pod 'BjmobAdsSDK', '0.0.29'
+  pod 'BjmobAdsSDK', '0.0.34'
   
   
-  执行 pod install
+  执行 pod install --repo-update
 ```
 
 ### 1.3 编辑info.plist
@@ -276,6 +276,7 @@ bjads_info_adsTypeInterstitial.txt
       [BJAdSdkConfig shareInstance].level = BJAdLogLevel_Debug;
       BJConfigModel * model = [[BJConfigModel alloc]init];
       model.debugMode = NO;
+      model.testDeviceIdentifiersGG = @["F38EA565-26DF-4AB7-900D-EBF1E5AF2154"];
       [[BJAdSdkConfig shareInstance] registerAppID:@"你的appId" withConfig:model];
   }
 
