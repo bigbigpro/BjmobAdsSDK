@@ -6,7 +6,7 @@ PODS:
     - BUTTSDKFramework/LivePull-Lite (= 1.45.1.8-premium)
   - Ads-CN/BUAdSDK (6.7.0.8)
   - BaiduMobAdSDK (5.311)
-  - BjmobAdsSDK (0.0.34):
+  - BjmobAdsSDK (0.0.36):
     - Ads-CN (= 6.7.0.8)
     - BaiduMobAdSDK (= 5.311)
     - GDTMobSDK (= 4.14.32)
@@ -73,7 +73,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Ads-CN: 4dcb5105a7105f76bcefb246e69daf6c39db2778
   BaiduMobAdSDK: dc88bb5e9cdfb070cbb228e4b1cc3ff8b5575b6a
-  BjmobAdsSDK: 5c77cc6ef578ab0aad7863b9e822cd10a722b74e
+  BjmobAdsSDK: 211f462e71720e44381c50cf837873f046be971a
   Bugly: 217ac2ce5f0f2626d43dbaa4f70764c953a26a31
   BUTTSDKFramework: 914058900f46707f12a6e8c10e8da6ba4e891c3e
   GDTMobSDK: f67eaea373e379cc7151a76fa94de3ac5123426d
@@ -81,6 +81,6 @@ SPEC CHECKSUMS:
   GoogleUserMessagingPlatform: f8d0cdad3ca835406755d0a69aa634f00e76d576
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 46168ab3df8025751c98a4ba4626249a03ac96e1
+PODFILE CHECKSUM: 1188661adbd35ef9ee3306c23a71964d855004e6
 
 COCOAPODS: 1.16.2
