@@ -6,7 +6,7 @@
 ### 在项目Podfile文件中加入
 
 ``` ruby
-  pod 'BjmobAdsSDK', '0.0.28'
+  pod 'BjmobAdsSDK', '0.0.37'
 ```
 
 执行 pod install 命令
